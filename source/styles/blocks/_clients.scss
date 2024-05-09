@@ -1,0 +1,36 @@
+.clients {
+  padding-top: 100px;
+  padding-bottom: 45px;
+}
+
+.clients__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoipsum-img {
+  path, .path2 {
+    fill: #D8D8D8;
+    transition: fill .2s ease-in;
+  }
+
+  .path--white {
+    fill: #fff;
+    transition: fill .2s ease-in;
+  }
+
+  &:hover {
+    path {
+      fill: $accent-color;
+    }
+
+    .path2 {
+      fill: $accent-color-hover;
+    }
+
+    .path--white {
+      fill: #D8D8D8;
+    }
+  }
+}
